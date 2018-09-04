@@ -17,14 +17,14 @@ Install with `pip`:
 
 ::
 
-    $ pip3 install graphenelib
+    $ pip3 install dpay-graphenelib
 
 Manual installation:
 
 ::
 
-    $ git clone https://github.com/xeroc/python-graphenlib/
-    $ cd python-graphenlib
+    $ git clone https://github.com/dpays/dpay-python-graphenelib/
+    $ cd dpay-python-graphenelib
     $ python3 setup.py install --user
 
 Upgrade
@@ -32,4 +32,4 @@ Upgrade
 
 ::
 
-   $ pip install --user --upgrade graphenelib
+   $ pip install --user --upgrade dpay-graphenelib
