@@ -11,10 +11,10 @@ except LookupError:
     ascii = codecs.lookup('ascii')
     codecs.register(lambda name, enc=ascii: {True: enc}.get(name == 'mbcs'))
 
-VERSION = '0.6.6'
+VERSION = '0.1.2'
 
 setup(
-    name='graphenelib',
+    name='dpay-graphenelib',
     version=VERSION,
     description='Python library for graphene-based blockchains',
     long_description=open('README.md').read(),

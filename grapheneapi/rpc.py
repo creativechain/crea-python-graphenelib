@@ -21,7 +21,7 @@ class Rpc:
 
         .. code-block:: python
 
-            ws = GrapheneHTTPRPC("https://api.node.com")
+            ws = GrapheneHTTPRPC("https://dpayd.dpays.io")
             print(ws.get_account_count())
 
     """
