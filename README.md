@@ -9,12 +9,12 @@ Installation
 Install with `pip`:
 
     $ sudo apt-get install libffi-dev libssl-dev python-dev
-    $ pip3 install dpay-graphenelib
+    $ pip3 install crea-graphenelib
 
 Manual installation:
 
-    $ git clone https://github.com/dpays/dpay-python-graphenelib/
-    $ cd dpay-python-graphenelib
+    $ git clone https://github.com/creativechain/crea-python-graphenelib/
+    $ cd crea-python-graphenelib
     $ python3 setup.py install --user
 
 Dependencies
@@ -33,13 +33,13 @@ present:
 Upgrade
 -------
 
-    $ pip install --user --upgrade dpay-graphenelib
+    $ pip install --user --upgrade crea-graphenelib
 
 Documentation
 -------------
 
 Thanks to readthedocs.io, the documentation can be viewed
-[online](https://docs.dpays.io/graphene)
+[online](https://docs.creas.io/graphene)
 
 Documentation is written with the help of sphinx and can be compile to
 html with:

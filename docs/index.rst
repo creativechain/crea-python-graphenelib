@@ -15,7 +15,7 @@ Welcome to python-graphenelib's documentation!
 Graphene is a blockchain technology (i.e. software) that allows for fast
 transactions and decentralized trading of assets as well as customized on-chain
 smart contracts. Graphene itself is a platform to develop customized
-blockchains like BitShares, Steem, dPay or PeerPlays.
+blockchains like BitShares, Steem, Crea or PeerPlays.
 
 In practice, Graphene is only a concept implementation and does not directly
 have its own public blockchain.

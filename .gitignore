@@ -63,3 +63,4 @@ target/
 
 # script data
 .ropeproject/
+.idea

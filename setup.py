@@ -11,19 +11,19 @@ except LookupError:
     ascii = codecs.lookup('ascii')
     codecs.register(lambda name, enc=ascii: {True: enc}.get(name == 'mbcs'))
 
-VERSION = '0.1.2'
+VERSION = '0.1.0'
 
 setup(
-    name='dpay-graphenelib',
+    name='crea-graphenelib',
     version=VERSION,
     description='Python library for graphene-based blockchains',
     long_description=open('README.md').read(),
-    download_url='https://github.com/dpays/dpay-python-graphenelib/tarball/' + VERSION,
-    author='dPay DAO',
-    author_email='jared@benchx.io',
-    maintainer='dPay DAO',
-    maintainer_email='jared@benchx.io',
-    url='http://www.github.com/dpays/dpay-python-graphenelib',
+    download_url='https://github.com/creativechain/crea-python-graphenelib/tarball/' + VERSION,
+    author='Creativechain Foundation',
+    author_email='info@creativechain.org',
+    maintainer='Creativechain Foundation',
+    maintainer_email='info@creativechain.org',
+    url='http://www.github.com/creativechain/crea-python-graphenelib',
     keywords=[
         'graphene',
         'api',

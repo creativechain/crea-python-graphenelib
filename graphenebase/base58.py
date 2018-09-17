@@ -6,14 +6,14 @@ import logging
 log = logging.getLogger(__name__)
 
 """ Default Prefix """
-PREFIX = "DWB"
+PREFIX = "CREA"
 
 known_prefixes = [
     PREFIX,
-    "BTS",
+    "CREA",
     "MUSE",
     "TEST",
-    "DWB",
+    "CREA",
     "GLX",
     "GLS",
 ]
@@ -38,7 +38,7 @@ class Base58(object):
     * ``repr(Base58)``:  Gives the hex representation of the data.
     *  ``format(Base58,_format)`` Formats the instance according to ``_format``:
         * ``"wif"``: prefixed with ``0x00``. Yields a valid wif key
-        * ``"bts"``: prefixed with ``BTS``
+        * ``"bts"``: prefixed with ``CREA``
         * etc.
 
     """

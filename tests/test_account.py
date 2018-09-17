@@ -27,70 +27,70 @@ class Testcases(unittest.TestCase):
                           ])
 
     def test_B85hexgetb58(self):
-        self.assertEqual(['BTS2CAbTi1ZcgMJ5otBFZSGZJKJenwGa9NvkLxsrS49Kr8JsiSGc',
-                          'BTShL45FEyUVSVV1LXABQnh4joS9FsUaffRtsdarB5uZjPsrwMZF',
-                          'BTS7DQR5GsfVaw4wJXzA3TogDhuQ8tUR2Ggj8pwyNCJXheHehL4Q',
-                          'BTSqc4QMAJHAkna65i8U4b7nkbWk4VYSWpZebW7JBbD7MN8FB5sc',
-                          'BTS2QAVTJnJQvLUY4RDrtxzX9jS39gEq8gbqYMWjgMxvsvZTJxDSu'
+        self.assertEqual(['CREA2CAbTi1ZcgMJ5otBFZSGZJKJenwGa9NvkLxsrS49Kr8JsiSGc',
+                          'CREAhL45FEyUVSVV1LXABQnh4joS9FsUaffRtsdarB5uZjPsrwMZF',
+                          'CREA7DQR5GsfVaw4wJXzA3TogDhuQ8tUR2Ggj8pwyNCJXheHehL4Q',
+                          'CREAqc4QMAJHAkna65i8U4b7nkbWk4VYSWpZebW7JBbD7MN8FB5sc',
+                          'CREA2QAVTJnJQvLUY4RDrtxzX9jS39gEq8gbqYMWjgMxvsvZTJxDSu'
                           ],
-                         [format(Base58("02b52e04a0acfe611a4b6963462aca94b6ae02b24e321eda86507661901adb49"), "BTS"),
-                          format(Base58("5b921f7051be5e13e177a0253229903c40493df410ae04f4a450c85568f19131"), "BTS"),
-                          format(Base58("0e1bfc9024d1f55a7855dc690e45b2e089d2d825a4671a3c3c7e4ea4e74ec00e"), "BTS"),
-                          format(Base58("6e5cc4653d46e690c709ed9e0570a2c75a286ad7c1bc69a648aae6855d919d3e"), "BTS"),
-                          format(Base58("b84abd64d66ee1dd614230ebbe9d9c6d66d78d93927c395196666762e9ad69d8"), "BTS")])
+                         [format(Base58("02b52e04a0acfe611a4b6963462aca94b6ae02b24e321eda86507661901adb49"), "CREA"),
+                          format(Base58("5b921f7051be5e13e177a0253229903c40493df410ae04f4a450c85568f19131"), "CREA"),
+                          format(Base58("0e1bfc9024d1f55a7855dc690e45b2e089d2d825a4671a3c3c7e4ea4e74ec00e"), "CREA"),
+                          format(Base58("6e5cc4653d46e690c709ed9e0570a2c75a286ad7c1bc69a648aae6855d919d3e"), "CREA"),
+                          format(Base58("b84abd64d66ee1dd614230ebbe9d9c6d66d78d93927c395196666762e9ad69d8"), "CREA")])
 
     def test_Address(self):
-        self.assertEqual([format(Address("BTSFN9r6VYzBK8EKtMewfNbfiGCr56pHDBFi", prefix="BTS"), "BTS"),
-                          format(Address("BTSdXrrTXimLb6TEt3nHnePwFmBT6Cck112", prefix="BTS"), "BTS"),
-                          format(Address("BTSJQUAt4gz4civ8gSs5srTK4r82F7HvpChk", prefix="BTS"), "BTS"),
-                          format(Address("BTSFPXXHXXGbyTBwdKoJaAPXRnhFNtTRS4EL", prefix="BTS"), "BTS"),
-                          format(Address("BTS3qXyZnjJneeAddgNDYNYXbF7ARZrRv5dr", prefix="BTS"), "BTS"),
+        self.assertEqual([format(Address("CREAFN9r6VYzBK8EKtMewfNbfiGCr56pHDBFi", prefix="CREA"), "CREA"),
+                          format(Address("CREAdXrrTXimLb6TEt3nHnePwFmBT6Cck112", prefix="CREA"), "CREA"),
+                          format(Address("CREAJQUAt4gz4civ8gSs5srTK4r82F7HvpChk", prefix="CREA"), "CREA"),
+                          format(Address("CREAFPXXHXXGbyTBwdKoJaAPXRnhFNtTRS4EL", prefix="CREA"), "CREA"),
+                          format(Address("CREA3qXyZnjJneeAddgNDYNYXbF7ARZrRv5dr", prefix="CREA"), "CREA"),
                           ],
-                         ["BTSFN9r6VYzBK8EKtMewfNbfiGCr56pHDBFi",
-                          "BTSdXrrTXimLb6TEt3nHnePwFmBT6Cck112",
-                          "BTSJQUAt4gz4civ8gSs5srTK4r82F7HvpChk",
-                          "BTSFPXXHXXGbyTBwdKoJaAPXRnhFNtTRS4EL",
-                          "BTS3qXyZnjJneeAddgNDYNYXbF7ARZrRv5dr",
+                         ["CREAFN9r6VYzBK8EKtMewfNbfiGCr56pHDBFi",
+                          "CREAdXrrTXimLb6TEt3nHnePwFmBT6Cck112",
+                          "CREAJQUAt4gz4civ8gSs5srTK4r82F7HvpChk",
+                          "CREAFPXXHXXGbyTBwdKoJaAPXRnhFNtTRS4EL",
+                          "CREA3qXyZnjJneeAddgNDYNYXbF7ARZrRv5dr",
                           ])
 
     def test_PubKey(self):
-        self.assertEqual([format(PublicKey("BTS6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL", prefix="BTS").address, "BTS"),
-                          format(PublicKey("BTS8YAMLtNcnqGNd3fx28NP3WoyuqNtzxXpwXTkZjbfe9scBmSyGT", prefix="BTS").address, "BTS"),
-                          format(PublicKey("BTS7HUo6bm7Gfoi3RqAtzwZ83BFCwiCZ4tp37oZjtWxGEBJVzVVGw", prefix="BTS").address, "BTS"),
-                          format(PublicKey("BTS6676cZ9qmqPnWMrm4McjCuHcnt6QW5d8oRJ4t8EDH8DdCjvh4V", prefix="BTS").address, "BTS"),
-                          format(PublicKey("BTS7u8m6zUNuzPNK1tPPLtnipxgqV9mVmTzrFNJ9GvovvSTCkVUra", prefix="BTS").address, "BTS")
+        self.assertEqual([format(PublicKey("CREA6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL", prefix="CREA").address, "CREA"),
+                          format(PublicKey("CREA8YAMLtNcnqGNd3fx28NP3WoyuqNtzxXpwXTkZjbfe9scBmSyGT", prefix="CREA").address, "CREA"),
+                          format(PublicKey("CREA7HUo6bm7Gfoi3RqAtzwZ83BFCwiCZ4tp37oZjtWxGEBJVzVVGw", prefix="CREA").address, "CREA"),
+                          format(PublicKey("CREA6676cZ9qmqPnWMrm4McjCuHcnt6QW5d8oRJ4t8EDH8DdCjvh4V", prefix="CREA").address, "CREA"),
+                          format(PublicKey("CREA7u8m6zUNuzPNK1tPPLtnipxgqV9mVmTzrFNJ9GvovvSTCkVUra", prefix="CREA").address, "CREA")
                           ], [
-                            'BTSDXi9tQ6Pjf1SEv3m4jn2U5M2YgMPpHy2V',
-                            'BTSQ1AEncFQ9ddRU1jfrieomX8RgTnSGgUwj',
-                            'BTSBkT8dGRrbbYpqCXovCBoZDNiVq3XXMyLG',
-                            'BTS3U2ok8z392o6BXYu75PGxohEH9boCx3dy',
-                            'BTSCpkigUBxSLfK2Ldgah9QpoLFftL11k8wW'])
+                            'CREADXi9tQ6Pjf1SEv3m4jn2U5M2YgMPpHy2V',
+                            'CREAQ1AEncFQ9ddRU1jfrieomX8RgTnSGgUwj',
+                            'CREABkT8dGRrbbYpqCXovCBoZDNiVq3XXMyLG',
+                            'CREA3U2ok8z392o6BXYu75PGxohEH9boCx3dy',
+                            'CREACpkigUBxSLfK2Ldgah9QpoLFftL11k8wW'])
 
     def test_btsprivkey(self):
-        self.assertEqual([format(PrivateKey("5HqUkGuo62BfcJU5vNhTXKJRXuUi9QSE6jp8C3uBJ2BVHtB8WSd").address, "BTS"),
-                          format(PrivateKey("5JWcdkhL3w4RkVPcZMdJsjos22yB5cSkPExerktvKnRNZR5gx1S").address, "BTS"),
-                          format(PrivateKey("5HvVz6XMx84aC5KaaBbwYrRLvWE46cH6zVnv4827SBPLorg76oq").address, "BTS"),
-                          format(PrivateKey("5Jete5oFNjjk3aUMkKuxgAXsp7ZyhgJbYNiNjHLvq5xzXkiqw7R").address, "BTS"),
-                          format(PrivateKey("5KDT58ksNsVKjYShG4Ls5ZtredybSxzmKec8juj7CojZj6LPRF7").address, "BTS")
+        self.assertEqual([format(PrivateKey("5HqUkGuo62BfcJU5vNhTXKJRXuUi9QSE6jp8C3uBJ2BVHtB8WSd").address, "CREA"),
+                          format(PrivateKey("5JWcdkhL3w4RkVPcZMdJsjos22yB5cSkPExerktvKnRNZR5gx1S").address, "CREA"),
+                          format(PrivateKey("5HvVz6XMx84aC5KaaBbwYrRLvWE46cH6zVnv4827SBPLorg76oq").address, "CREA"),
+                          format(PrivateKey("5Jete5oFNjjk3aUMkKuxgAXsp7ZyhgJbYNiNjHLvq5xzXkiqw7R").address, "CREA"),
+                          format(PrivateKey("5KDT58ksNsVKjYShG4Ls5ZtredybSxzmKec8juj7CojZj6LPRF7").address, "CREA")
                           ], [
-                            'BTSGu2U7Q3rmkCUCkQH2SToLMjEVUr86GrpA',
-                            'BTS9YgTfC8EfkgDG7DoRXJpMVKRougo64Lop',
-                            'BTSBXqRucGm7nRkk6jm7BNspTJTWRtNcx7k5',
-                            'BTS5tTDDR6M3mkcyVv16edsw8dGUyNQZrvKU',
-                            'BTS8G9ATJbJewVjTgTGmLGLNe1uP5XDWzaKX'])
+                            'CREAGu2U7Q3rmkCUCkQH2SToLMjEVUr86GrpA',
+                            'CREA9YgTfC8EfkgDG7DoRXJpMVKRougo64Lop',
+                            'CREABXqRucGm7nRkk6jm7BNspTJTWRtNcx7k5',
+                            'CREA5tTDDR6M3mkcyVv16edsw8dGUyNQZrvKU',
+                            'CREA8G9ATJbJewVjTgTGmLGLNe1uP5XDWzaKX'])
 
     def test_PublicKey(self):
-        self.assertEqual([str(PublicKey("BTS6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL", prefix="BTS")),
-                          str(PublicKey("BTS8YAMLtNcnqGNd3fx28NP3WoyuqNtzxXpwXTkZjbfe9scBmSyGT", prefix="BTS")),
-                          str(PublicKey("BTS7HUo6bm7Gfoi3RqAtzwZ83BFCwiCZ4tp37oZjtWxGEBJVzVVGw", prefix="BTS")),
-                          str(PublicKey("BTS6676cZ9qmqPnWMrm4McjCuHcnt6QW5d8oRJ4t8EDH8DdCjvh4V", prefix="BTS")),
-                          str(PublicKey("BTS7u8m6zUNuzPNK1tPPLtnipxgqV9mVmTzrFNJ9GvovvSTCkVUra", prefix="BTS"))
+        self.assertEqual([str(PublicKey("CREA6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL", prefix="CREA")),
+                          str(PublicKey("CREA8YAMLtNcnqGNd3fx28NP3WoyuqNtzxXpwXTkZjbfe9scBmSyGT", prefix="CREA")),
+                          str(PublicKey("CREA7HUo6bm7Gfoi3RqAtzwZ83BFCwiCZ4tp37oZjtWxGEBJVzVVGw", prefix="CREA")),
+                          str(PublicKey("CREA6676cZ9qmqPnWMrm4McjCuHcnt6QW5d8oRJ4t8EDH8DdCjvh4V", prefix="CREA")),
+                          str(PublicKey("CREA7u8m6zUNuzPNK1tPPLtnipxgqV9mVmTzrFNJ9GvovvSTCkVUra", prefix="CREA"))
                           ],
-                         ["BTS6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL",
-                          "BTS8YAMLtNcnqGNd3fx28NP3WoyuqNtzxXpwXTkZjbfe9scBmSyGT",
-                          "BTS7HUo6bm7Gfoi3RqAtzwZ83BFCwiCZ4tp37oZjtWxGEBJVzVVGw",
-                          "BTS6676cZ9qmqPnWMrm4McjCuHcnt6QW5d8oRJ4t8EDH8DdCjvh4V",
-                          "BTS7u8m6zUNuzPNK1tPPLtnipxgqV9mVmTzrFNJ9GvovvSTCkVUra"
+                         ["CREA6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL",
+                          "CREA8YAMLtNcnqGNd3fx28NP3WoyuqNtzxXpwXTkZjbfe9scBmSyGT",
+                          "CREA7HUo6bm7Gfoi3RqAtzwZ83BFCwiCZ4tp37oZjtWxGEBJVzVVGw",
+                          "CREA6676cZ9qmqPnWMrm4McjCuHcnt6QW5d8oRJ4t8EDH8DdCjvh4V",
+                          "CREA7u8m6zUNuzPNK1tPPLtnipxgqV9mVmTzrFNJ9GvovvSTCkVUra"
                           ])
 
     def test_Privatekey(self):
@@ -167,19 +167,19 @@ class Testcases(unittest.TestCase):
              "Ipee1quee7sheughemae4eir8pheix3quac3ei0Aquo9ohieLaeseeh8AhGeM2ew",
              "Tech5iir0aP6waiMeiHoph3iwoch4iijoogh0zoh9aSh6Ueb2Dee5dang1aa8IiP"
              ]
-        b = ["DWB5NyCrrXHmdikC6QPRAPoDjSHVQJe3WC5bMZuF6YhqhSsfYfjhN",
-             "DWB8gyvJtYyv5ZbT2ZxbAtgufQ5ovV2bq6EQp4YDTzQuSwyg7Ckry",
-             "DWB7yE71iVPSpaq8Ae2AmsKfyFxA8pwYv5zgQtCnX7xMwRUQMVoGf",
-             "DWB5jRgWA2kswPaXsQNtD2MMjs92XfJ1TYob6tjHtsECg2AusF5Wo",
-             "DWB6XHwVxcP6zP5NV1jUbG6Kso9m8ZG9g2CjDiPcZpAxHngx6ATPB",
-             "DWB59X1S4ofTAeHd1iNHDGxim5GkLo2AdcznksUsSYGU687ywB5WV",
-             "DWB6BPPL4iSRbFVVN8v3BEEEyDsC1STRK7Ba9ewQ4Lqvszn5J8VAe",
-             "DWB7cdK927wj95ptUrCk6HKWVeF74LG5cTjDTV22Z3yJ4Xw8xc9qp",
-             "DWB7VNFRjrE1hs1CKpEAP9NAabdFpwvzYXRKvkrVBBv2kTQCbNHz7",
-             "DWB7ZZFhEBjujcKjkmY31i1spPMx6xDSRhkursZLigi2HKLuALe5t",
+        b = ["CREA5NyCrrXHmdikC6QPRAPoDjSHVQJe3WC5bMZuF6YhqhSsfYfjhN",
+             "CREA8gyvJtYyv5ZbT2ZxbAtgufQ5ovV2bq6EQp4YDTzQuSwyg7Ckry",
+             "CREA7yE71iVPSpaq8Ae2AmsKfyFxA8pwYv5zgQtCnX7xMwRUQMVoGf",
+             "CREA5jRgWA2kswPaXsQNtD2MMjs92XfJ1TYob6tjHtsECg2AusF5Wo",
+             "CREA6XHwVxcP6zP5NV1jUbG6Kso9m8ZG9g2CjDiPcZpAxHngx6ATPB",
+             "CREA59X1S4ofTAeHd1iNHDGxim5GkLo2AdcznksUsSYGU687ywB5WV",
+             "CREA6BPPL4iSRbFVVN8v3BEEEyDsC1STRK7Ba9ewQ4Lqvszn5J8VAe",
+             "CREA7cdK927wj95ptUrCk6HKWVeF74LG5cTjDTV22Z3yJ4Xw8xc9qp",
+             "CREA7VNFRjrE1hs1CKpEAP9NAabdFpwvzYXRKvkrVBBv2kTQCbNHz7",
+             "CREA7ZZFhEBjujcKjkmY31i1spPMx6xDSRhkursZLigi2HKLuALe5t",
              ]
         for i, pwd in enumerate(a):
-            p = format(PasswordKey("jared", pwd, "posting").get_public(), "DWB")
+            p = format(PasswordKey("jared", pwd, "posting").get_public(), "CREA")
             self.assertEqual(p, b[i])
 
     def test_btcprivkey(self):

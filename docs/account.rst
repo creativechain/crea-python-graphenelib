@@ -36,17 +36,17 @@ Format vs. Repr
 
     print("Private Key             : " + format(private_key,"WIF"))
     print("Secret Exponent (hex)   : " + repr(private_key))
-    print("BTS PubKey (hex)        : " + repr(private_key.pubkey))
-    print("BTS PubKey              : " + format(private_key.pubkey, "BTS"))
-    print("BTS Address             : " + format(private_key.address,"BTS"))
+    print("CREA PubKey (hex)        : " + repr(private_key.pubkey))
+    print("CREA PubKey              : " + format(private_key.pubkey, "CREA"))
+    print("CREA Address             : " + format(private_key.address,"CREA"))
 
 Output::
 
     Private Key             : 5Jdv8JHh4r2tUPtmLq8hp8DkW5vCp9y4UGgj6udjJQjG747FCMc
     Secret Exponent (hex)   : 6c2662a6ac41bd9132a9f846847761ab4f80c82d519cdf92f40dfcd5e97ec5b5
-    BTS PubKey (hex)        : 021760b78d93878af16f8c11d22f0784c54782a12a88bbd36be847ab0c8b2994de
-    BTS PubKey              : BTS54nWRnewkASXXTwpn3q4q8noadzXmw4y1KpED3grup7VrDDRmx
-    BTS Address             : BTSCmUwH8G1t3VSZRH5kwxx31tiYDNrzWvyW
+    CREA PubKey (hex)        : 021760b78d93878af16f8c11d22f0784c54782a12a88bbd36be847ab0c8b2994de
+    CREA PubKey              : CREA54nWRnewkASXXTwpn3q4q8noadzXmw4y1KpED3grup7VrDDRmx
+    CREA Address             : CREACmUwH8G1t3VSZRH5kwxx31tiYDNrzWvyW
 
 Compressed vs. Uncompressed
 ***************************
