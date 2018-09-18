@@ -70,15 +70,20 @@ class Rpc:
 
             api_method = name
             if "api" in kwargs:
-                api_method = kwargs["api"] + "_" + name
+                api_method = kwargs["api"] + "." + name
 
             # let's be able to define the num_retries per query
             self.num_retries = kwargs.get("num_retries", self.num_retries)
 
+            params = kwargs
+            if 'params' in kwargs:
+                params = kwargs["params"]
+
             query = {"method": api_method,
-                     "params": list(args),
                      "jsonrpc": "2.0",
+                     "params": params,
                      "id": self.get_request_id()}
+
             r = self.rpcexec(query)
             message = self.parse_response(r)
             return message
