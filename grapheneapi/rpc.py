@@ -26,7 +26,6 @@ class Rpc:
 
     """
     def __init__(self, url, **kwargs):
-        self.api_id = {}
         self._request_id = 0
 
         self.num_retries = kwargs.get("num_retries", 1)
@@ -69,24 +68,15 @@ class Rpc:
         """
         def method(*args, **kwargs):
 
-            # Sepcify the api to talk to
-            if "api_id" not in kwargs:
-                if ("api" in kwargs):
-                    if (kwargs["api"] in self.api_id and
-                            self.api_id[kwargs["api"]]):
-                        api_id = self.api_id[kwargs["api"]]
-                    else:
-                        api_id = kwargs["api"]
-                else:
-                    api_id = 0
-            else:
-                api_id = kwargs["api_id"]
+            api_method = name
+            if "api" in kwargs:
+                api_method = kwargs["api"] + "_" + name
 
             # let's be able to define the num_retries per query
             self.num_retries = kwargs.get("num_retries", self.num_retries)
 
-            query = {"method": "call",
-                     "params": [api_id, name, list(args)],
+            query = {"method": api_method,
+                     "params": list(args),
                      "jsonrpc": "2.0",
                      "id": self.get_request_id()}
             r = self.rpcexec(query)
